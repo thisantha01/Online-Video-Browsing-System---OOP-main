@@ -50,15 +50,5 @@ The main goal of C-Hub is to apply object-oriented programming concepts such as:
 
 While building a full, functioning system similar to a lightweight video platform.
 
----
 
-## 📂 Project Structure
-(You can add a folder structure diagram once uploaded)
-
----
-
-## 📌 License
-This project is for educational purposes only.
-
----
 
