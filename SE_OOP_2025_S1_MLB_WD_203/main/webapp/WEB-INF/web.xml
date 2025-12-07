@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-inst..." 
+xmlns="http://java.sun.com/xml/ns/javaee" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web..." 
+id="WebApp_ID" version="3.0" >
+
+
+	<!-- This is Content creator -->
+
+<servlet>
+	<servlet-name> ProfileCreate</servlet-name>
+	<servlet-class>servlet.ProfileCreate</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name> ProfileCreate</servlet-name>
+	<url-pattern>/addcreator</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+	<servlet-name> ProfileAccess</servlet-name>
+	<servlet-class>servlet.ProfileAccess</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name> ProfileAccess</servlet-name>
+	<url-pattern>/creatorValidate</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+	<servlet-name> UpdateProfile</servlet-name>
+	<servlet-class>servlet.UpdateProfile</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name> UpdateProfile</servlet-name>
+	<url-pattern>/updatecrator</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+	<servlet-name> AfterCreateProfileintoProfile</servlet-name>
+	<servlet-class>servlet.AfterCreateProfileintoProfile</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name> AfterCreateProfileintoProfile</servlet-name>
+	<url-pattern>/after</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+	<servlet-name> DeleteProfile</servlet-name>
+	<servlet-class>servlet.DeleteProfile</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name> DeleteProfile</servlet-name>
+	<url-pattern>/delprofile</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+	<servlet-name>Upload</servlet-name>
+	<servlet-class>servlet.Upload</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name> Upload</servlet-name>
+	<url-pattern>/uploadvideo</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+	<servlet-name>DisplayVideo</servlet-name>
+	<servlet-class>servlet.DisplayVideo</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name> DisplayVideo</servlet-name>
+	<url-pattern>/display</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+	<servlet-name>Thumbnail</servlet-name>
+	<servlet-class>servlet.Thumbnail</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name> Thumbnail</servlet-name>
+	<url-pattern>/displaybyhumbnail</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+	<servlet-name>DeleteVideo</servlet-name>
+	<servlet-class>servlet.DeleteVideo</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name> DeleteVideo</servlet-name>
+	<url-pattern>/delvideo</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+	<servlet-name>VideoServelet</servlet-name>
+	<servlet-class>servlet.VideoServelet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name> VideoServelet</servlet-name>
+	<url-pattern>/viload</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+	<servlet-name>AllThumnailInHome</servlet-name>
+	<servlet-class>servlet.AllThumnailInHome</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name> AllThumnailInHome</servlet-name>
+	<url-pattern>/homethumnail</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+	<servlet-name>PlayVideoServlet</servlet-name>
+	<servlet-class>servlet.PlayVideoServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name> PlayVideoServlet</servlet-name>
+	<url-pattern>/playvideo</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+	<servlet-name>VideoFileStream</servlet-name>
+	<servlet-class>servlet.VideoFileStream</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name> VideoFileStream</servlet-name>
+	<url-pattern>/vidStream</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+
+
+
+
+
+<!-- This is User -->
+
+<display-name>Creator Hub</display-name>
+
+	<welcome-file-list>
+		<welcome-file>Home.jsp</welcome-file>
+	</welcome-file-list>
+
+
+
+
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>sevelet.login</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/userlog</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<servlet>
+		<servlet-name>updateUser</servlet-name>
+		<servlet-class>sevelet.updateUser</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>updateUser</servlet-name>
+		<url-pattern>/usrupdate</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>homeUser</servlet-name>
+		<servlet-class>sevelet.homeUser</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>homeUser</servlet-name>
+		<url-pattern>/homeupdt</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>deleteUserone</servlet-name>
+		<servlet-class>sevelet.deleteUserone</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>deleteUserone</servlet-name>
+		<url-pattern>/delusr</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>searchVideo</servlet-name>
+		<servlet-class>sevelet.searchVideo</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>searchVideo</servlet-name>
+		<url-pattern>/shcvdo</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+
+
+
+	<!-- This is Admin -->
+
+
+    <welcome-file-list>
+    <welcome-file>user.jsp</welcome-file>
+    </welcome-file-list>
+    
+    
+    
+    
+    
+   
+    
+    
+    
+    <!-- This is content Moderator -->
+    
+    
+    <servlet>
+        <servlet-name>addReview</servlet-name>
+        <servlet-class>servlet.addReview</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addReview</servlet-name>
+        <url-pattern>/reviewvid</url-pattern>
+    </servlet-mapping>
+
+   
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/modregister</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/loginServ</url-pattern>
+    </servlet-mapping>
+
+ 
+    <servlet>
+        <servlet-name>RetrieveVideoServlet</servlet-name>
+        <servlet-class>servlet.RetrieveVideoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RetrieveVideoServlet</servlet-name>
+        <url-pattern>/modRetriew</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <servlet-name>ShowReviewedVideosServlet</servlet-name>
+        <servlet-class>servlet.ShowReviewedVideosServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowReviewedVideosServlet</servlet-name>
+        <url-pattern>/modSwRevewedVid</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteVideoServlet</servlet-name>
+        <servlet-class>servlet.DeleteVideoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteVideoServlet</servlet-name>
+        <url-pattern>/modDeleteVidServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateReviewedVideoServlet</servlet-name>
+        <servlet-class>servlet.UpdateReviewedVideoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateReviewedVideoServlet</servlet-name>
+        <url-pattern>/modUpdateReviewedVideoServlet</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
